@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  
-    <header class="page-header">            
+
+    <header class="page-header wrapper">
       <div class="page-header__wrapper">
         <a class="logo page-header__logo">
           <span>Cat</span>Energy
@@ -32,16 +33,20 @@
 
     <main class="page-main">
       <section class="about-site">
-        <div class="about-site__wrapper">
-          <h1 class="about-site__title">Функциональное питание для котов</h1>
-          <p class="about-site__slogan">Занялся собой?Займись котом!</p>
+        <div class="about-site__text">
+          <div class="wrapper">
+            <h1 class="about-site__title">Функциональное питание для котов</h1>
+            <p class="about-site__slogan">Занялся собой?Займись котом!</p>
+          </div>
+        </div>
+        <div class="wrapper">
           <img src="http://placehold.it/280x270" class="about-site__image" alt="Cat energy pro" width="280" height="270">
           <a href="form.html" class="button about-site__button">Подобрать программу</a>
         </div>
       </section>
 
       <section class="program-options">
-        <div class="program-options__wrapper">
+        <div class="program-options__wrapper wrapper">
           <h2 class="vissually-hidden">Виды программ</h2>
           <div class="program-options__unit">
             <h3 class="program-options__title">Похудение</h3>
@@ -56,8 +61,8 @@
         </div>
       </section>
 
-      <section class="about-product">
-        <h2 class="about-product__title">Как это работает</h2>
+      <section class="about-product wrapper">
+        <h2 class="about-product__title block-title">Как это работает</h2>
         <ul class="about-product__list">
           <li class="about-product__unit">
             <h3 class="vissually-hidden">Содержание</h3>
@@ -79,33 +84,35 @@
       </section>
 
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__results">
-          <div class="example__result">
-            <p class="example__value">5 кг</p>
-            <p class="example__category">Снижение веса</p>
+        <div class="example__wrapper wrapper">
+          <h2 class="example__title block-title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__results">
+            <div class="example__result">
+              <p class="example__value">5 кг</p>
+              <p class="example__category">Снижение веса</p>
+            </div>
+            <div class="example__result">
+              <p class="example__value">60 дней</p>
+              <p class="example__category">Затрачено времени</p>
+            </div>
           </div>
-          <div class="example__result">
-            <p class="example__value">60 дней</p>
-            <p class="example__category">Затрачено времени</p>
+          <p class="example__cost">Затраты на питание: <span class="example__cost-value">15 000 руб.</span></p>
+          <img src="http://placehold.it/311x232" alt="Толстый кот" width="311" height="232">
+          <img src="http://placehold.it/251x240" alt="Худой кот" width="251" height="240">
+          <div class="example__time time">
+            <button type="button" class="time__before time__button">Было</button>
+            <label class="time__switch">
+              <input class="time__input" type="checkbox">
+              <span class="time__slider"></span>
+            </label>
+            <button type="button" class="time__after time__button">Стало</button>
           </div>
-        </div>
-        <p class="example__cost">Затраты на питание: <span class="example__cost-value">15 000 руб.</span></p>
-        <img src="http://placehold.it/311x232" alt="Толстый кот" width="311" height="232">
-        <img src="http://placehold.it/251x240" alt="Худой кот" width="251" height="240">
-        <div class="example__time">
-          <button type="button" class="example__before">Было</button>
-          <label class="example__switch">
-            <input class="example__input" type="checkbox">
-            <span class="example__slider"></span>
-          </label>
-          <button type="button" class="example__after">Стало</button>
         </div>
       </section>
 
       <section class="adress">
-        <div class="adress__wrapper">
+        <div class="adress__wrapper wrapper">
           <h3 class="adress__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="adress__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
@@ -114,7 +121,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
       <a class="logo page-footer__logo">
         <span>Cat</span>Energy
       </a>
@@ -127,6 +134,6 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link">HTML Academy</a>
       </div>
     </footer>
-    
+
   </body>
 </html>

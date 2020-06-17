@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">            
+    <header class="page-header wrapper">
       <div class="page-header__wrapper">
         <a href="index.html" class="logo page-header__logo">
           <span>Cat</span>Energy
@@ -32,7 +33,7 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Функциональное питание для котов</h1>
-      <section class="program-selection">
+      <section class="program-selection wrapper">
         <h2 class="program-selection__title">Подбор программы</h2>
         <p class="program-selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="program-selection__content" action="https://echo.htmlacademy.ru" method="POST">
@@ -61,7 +62,7 @@
                 </label>
               </li>
               <li class="program-type-list__unit">
-                <label for="target-mass-gain" class="program-type-list__label"> 
+                <label for="target-mass-gain" class="program-type-list__label">
                   <input type="radio" class="program-type-list__input" id="target-mass-gain" name="program-target" value="mass-gain">
                   Набор массы
                 </label>
@@ -87,7 +88,7 @@
           </fieldset>
           <fieldset class="program-selection__block">
             <legend class="program-selection__legend">Комментарий</legend>
-            <textarea name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="program-selection__message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="program-selection__block">
             <legend class="program-selection__legend">Дополнительно</legend>
@@ -121,10 +122,10 @@
           <button type="submit" class="program-selection__button button">Отправить заявку</button>
           <span class="program-selection__required">* — Обязательные поля</span>
         </form>
-      </section> 
-            
+      </section>
+
       <section class="adress">
-        <div class="adress__wrapper">
+        <div class="adress__wrapper wrapper">
           <h3 class="adress__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="adress__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
@@ -133,7 +134,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
       <a href="index.html" class="logo page-footer__logo">
         <span>Cat</span>Energy
       </a>
