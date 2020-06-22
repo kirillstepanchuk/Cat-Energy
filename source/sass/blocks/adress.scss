@@ -1,3 +1,18 @@
 .adress {
-    padding-top: 30px;
+  padding-top: 30px;
+}
+
+.adress__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.adress__place {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.catalog-adress {
+  background-color: #f2f2f2;
 }

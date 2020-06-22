@@ -1,18 +1,10 @@
 .wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.button {
-    background-color: #68b738;
-    &--grey {
-        background-color: #f2f2f2;
-    }
-} 
-
-.page-footer {
-    background-color: #f2f2f2;
-
-    padding-top: 39px;
-    padding-bottom: 28px;
+body {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 14px;
+  color: #111111;
 }

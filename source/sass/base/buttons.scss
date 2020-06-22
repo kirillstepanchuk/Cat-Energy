@@ -1,0 +1,15 @@
+.button {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+
+  background-color: #68b738;
+
+  &--grey {
+    color: #444444;
+
+    background-color: #f2f2f2;
+  }
+}
