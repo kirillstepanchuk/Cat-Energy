@@ -2,9 +2,19 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 
   background-color: #68b738;
   border: none;
+
+  padding-top: 11px;
+
+  width: 280px;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  display: block;
 
   cursor: pointer;
 
@@ -12,8 +22,20 @@
     font-size: 16px;
     text-transform: uppercase;
     color: #444444;
+    text-align: center;
 
     background-color: #f2f2f2;
     border: none;
+
+    padding-top: 11px;
+
+    width: 280px;
+    height: 40px;
+
+    box-sizing: border-box;
+
+    display: block;
+
+    cursor: pointer;
   }
 }
