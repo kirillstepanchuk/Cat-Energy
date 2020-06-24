@@ -1,13 +1,16 @@
 .button {
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+  line-height: 20px;
 
   background-color: #68b738;
   border: none;
+  outline: none;
 
-  padding-top: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   width: 280px;
   height: 40px;
@@ -19,15 +22,17 @@
   cursor: pointer;
 
   &--grey {
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     color: #444444;
     text-align: center;
+    line-height: 20px;
 
     background-color: #f2f2f2;
     border: none;
+    outline: none;
 
-    padding-top: 11px;
+    padding-top: 10px;
 
     width: 280px;
     height: 40px;
@@ -38,4 +43,20 @@
 
     cursor: pointer;
   }
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active span{
+  opacity: 0.3;
+}
+
+.button--grey:hover {
+  background-color: #ebebeb;
+}
+
+.button--grey:active span {
+  opacity: 0.3;
 }

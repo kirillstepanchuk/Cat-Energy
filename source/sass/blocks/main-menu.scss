@@ -7,3 +7,11 @@
 .main-menu__unit a {
   color: #111111;
 }
+
+.main-menu__unit a:hover {
+  opacity: 0.6;
+}
+
+.main-menu__unit a:active {
+  opacity: 0.3;
+}
