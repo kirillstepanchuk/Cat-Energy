@@ -1,9 +1,5 @@
 .button {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
   text-align: center;
-  line-height: 20px;
 
   background-color: #68b738;
   border: none;
@@ -13,7 +9,6 @@
   padding-bottom: 10px;
 
   width: 280px;
-  height: 40px;
 
   box-sizing: border-box;
 
@@ -22,26 +17,7 @@
   cursor: pointer;
 
   &--grey {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #444444;
-    text-align: center;
-    line-height: 20px;
-
     background-color: #f2f2f2;
-    border: none;
-    outline: none;
-
-    padding-top: 10px;
-
-    width: 280px;
-    height: 40px;
-
-    box-sizing: border-box;
-
-    display: block;
-
-    cursor: pointer;
   }
 }
 
@@ -59,4 +35,15 @@
 
 .button--grey:active span {
   opacity: 0.3;
+}
+
+.button span {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.button--grey span {
+  color: #444444;
 }
