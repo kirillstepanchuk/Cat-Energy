@@ -1,0 +1,45 @@
+.button {
+  text-align: center;
+
+  background-color: #68b738;
+  border: none;
+  outline: none;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  width: 280px;
+
+  box-sizing: border-box;
+
+  display: block;
+
+  cursor: pointer;
+
+  &--grey {
+    background-color: #f2f2f2;
+  }
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active span {
+  opacity: 0.3;
+}
+
+.button--grey:hover {
+  background-color: #ebebeb;
+}
+
+.button span {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.button--grey span {
+  color: #444444;
+}

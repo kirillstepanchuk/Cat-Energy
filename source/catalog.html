@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">            
+    <header class="page-header wrapper">
       <div class="page-header__wrapper">
         <a href="index.html" class="logo page-header__logo">
           <span>Cat</span>Energy
@@ -20,7 +21,7 @@
           <li class="main-menu__unit">
             <a href="index.html">Главная</a>
           </li>
-          <li class="main-menu__unit">
+          <li class="main-menu__unit main-menu__unit-active">
             <a>Каталог продукции</a>
           </li>
           <li class="main-menu__unit">
@@ -32,7 +33,7 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Функциональное питание для котов</h1>
-      <section class="catalog">
+      <section class="catalog wrapper">
         <h2 class="catalog__title">Каталог продукции</h2>
         <div class="catalog__wrapper">
           <div class="product">
@@ -57,7 +58,9 @@
                   <td class="product__option product__option-value">700 Р.</td>
                 </tr>
               </table>
-              <a href="order.html" class="product__button button">Заказать</a>
+              <a href="order.html" class="product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
           </div>
           <div class="product">
@@ -82,7 +85,9 @@
                   <td class="product__option product__option-value">1000 Р.</td>
                 </tr>
               </table>
-              <a href="order.html" class="product__button button">Заказать</a>
+              <a href="order.html" class="product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
           </div>
           <div class="product">
@@ -107,7 +112,9 @@
                   <td class="product__option product__option-value">700 Р.</td>
                 </tr>
               </table>
-              <a href="order.html" class="product__button button">Заказать</a>
+              <a href="order.html" class="product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
           </div>
           <div class="product">
@@ -132,7 +139,9 @@
                   <td class="product__option product__option-value">1000 Р.</td>
                 </tr>
               </table>
-              <a href="order.html" class="product__button button">Заказать</a>
+              <a href="order.html" class="product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
           </div>
           <div class="product">
@@ -157,7 +166,9 @@
                   <td class="product__option product__option-value">400 Р.</td>
                 </tr>
               </table>
-              <a href="order.html" class="product__button button">Заказать</a>
+              <a href="order.html" class="product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
           </div>
           <div class="product">
@@ -182,14 +193,16 @@
                   <td class="product__option product__option-value">700 Р.</td>
                 </tr>
               </table>
-              <a href="order.html" class="product__button button">Заказать</a>
+              <a href="order.html" class="product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
           </div>
           <div class="product">
             <a href="#">
               <img src="http://placehold.it/140x144"  class="product__image" alt="Cat Energy SLIM 500 г" width="140" height="144">
             </a>
-            <div class="product__info">        
+            <div class="product__info">
               <a href="#">
                 <h3 class="product__title">Cat Energy SLIM 500 г</h3>
               </a>
@@ -207,18 +220,22 @@
                   <td class="product__option product__option-value">500 Р.</td>
                 </tr>
               </table>
-              <a href="order.html" class="product__button button">Заказать</a>
+              <a href="order.html" class="product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
           </div>
-          <div class="catalog__another">
-            <p class="catalog__subtitle">Показать еще 100500 товров</p>
-            <p class="catalog__subtext">На самом деле вкусов гораздо больше!</p>
-            <a href="#" class="button catalog__button-show">Показать все</a>
+          <div class="catalog__another another-product">
+            <p class="another-product__title">Показать еще 100500 товров</p>
+            <p class="another-product__text">На самом деле вкусов гораздо больше!</p>
+            <a href="#" class="button button--grey another-product__button-show">
+              <span>Показать все</span>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="catalog-extra">
+      <section class="catalog-extra wrapper">
         <div class="catalog-extra__wrapper">
           <h2 class="catalog-extra__title">Дополнительные товары</h2>
           <div class="catalog-extra__list">
@@ -230,7 +247,9 @@
                   <td class="extra-product__option extra-product__option-price">100 Р.</td>
                 </tr>
               </table>
-              <a href="#" class="extra-product__button button">Заказать</a>
+              <a href="#" class="extra-product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
             <div class="catalog-extra__unit extra-product">
               <h3 class="extra-product__title">Питьевая вода</h3>
@@ -240,7 +259,9 @@
                   <td class="extra-product__option extra-product__option-price">50 P.</td>
                 </tr>
               </table>
-              <a href="#" class="extra-product__button button">Заказать</a>
+              <a href="#" class="extra-product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
             <div class="catalog-extra__unit extra-product">
               <h3 class="extra-product__title">Молоко</h3>
@@ -250,7 +271,9 @@
                   <td class="extra-product__option extra-product__option-price">100 P.</td>
                 </tr>
               </table>
-              <a href="#" class="extra-product__button button">Заказать</a>
+              <a href="#" class="extra-product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
             <div class="catalog-extra__unit extra-product">
               <h3 class="extra-product__title">Витамины</h3>
@@ -260,7 +283,9 @@
                   <td class="extra-product__option extra-product__option-price">300 P.</td>
                 </tr>
               </table>
-              <a href="#" class="extra-product__button button">Заказать</a>
+              <a href="#" class="extra-product__button button">
+                <span>Заказать</span>
+              </a>
             </div>
           </div>
           <div class="catalog-extra__stock">
@@ -269,29 +294,32 @@
         </div>
       </section>
 
-      <section class="adress">
-        <div class="adress__wrapper">
+      <section class="adress catalog-adress">
+        <div class="adress__wrapper wrapper">
           <h3 class="adress__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="adress__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <!-- <img src="http://placehold.it/320x362" class="adress__map" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362"> -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6182010980838!2d30.322242735528942!3d59.938477322303875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1591034409186!5m2!1sru!2sby" width="320" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="adress__map">
+          <!-- <img src="http://placehold.it/320x362" class="adress__map" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362"> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6182010980838!2d30.322242735528942!3d59.938477322303875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1591034409186!5m2!1sru!2sby" width="320" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a href="index.html" class="logo page-footer__logo">
-        <span>Cat</span>Energy
-      </a>
-      <div class="page-footer__social social">
-        <a href="#" class="social__vkontakte" aria-label="Вконтакте"></a>
-        <a href="#" class="social__instagram" aria-label="Инстаграмм"></a>
-        <a href="#" class="social__facebook" aria-label="Фэйсбук"></a>
-      </div>
-      <div class="page-footer__developers developers">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link">HTML Academy</a>
+      <div class="page-footer__wrapper wrapper">
+        <a class="logo page-footer__logo">
+          <span>Cat</span>Energy
+        </a>
+        <div class="page-footer__social social">
+          <a href="#" class="social__vkontakte" aria-label="Вконтакте"></a>
+          <a href="#" class="social__instagram" aria-label="Инстаграмм"></a>
+          <a href="#" class="social__facebook" aria-label="Фэйсбук"></a>
+        </div>
+        <div class="page-footer__developer developer">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link">HTML Academy</a>
+        </div>
       </div>
     </footer>
-
   </body>
 </html>

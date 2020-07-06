@@ -1,0 +1,24 @@
+.main-menu {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu__unit {
+  font-family: "OswaldMedium", "Arial", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.main-menu__unit a {
+  color: #111111;
+}
+
+.main-menu__unit a:hover {
+  opacity: 0.6;
+}
+
+.main-menu__unit a:active {
+  opacity: 0.3;
+}
