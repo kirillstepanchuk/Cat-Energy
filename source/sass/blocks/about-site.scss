@@ -1,11 +1,13 @@
-.about-site__text {
-  background: #65a93c url("../img/index-background-mobile@1x.jpg") no-repeat;
+.about-site {
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-size: 100% 305px;
 }
 
 .about-site__title {
   font-size: 36px;
   color: #ffffff;
   font-weight: 400;
+  text-align: center;
 
   padding-top: 25px;
 }
@@ -13,6 +15,110 @@
 .about-site__slogan {
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 
   padding-top: 15px;
+  margin: 0;
+}
+
+.about-site__image {
+  margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+  .about-site {
+    background: none;
+  }
+
+  .about-site__text {
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    background-position: 35px 265px;
+
+    height: 850px;
+  }
+
+  .about-site__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: start;
+
+    padding-top: 60px;
+    padding-left: 90px;
+
+    width: 427px;
+  }
+
+  .about-site__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    text-align: start;
+
+    padding-top: 45px;
+    padding-left: 90px;
+    margin: 0;
+  }
+
+  .about-site__image {
+    display: none;
+  }
+
+  .about-site__button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 90px;
+    margin-top: 50px;
+
+    width: 245px;
+  }
+
+  .about-site__button span {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about-site {
+    position: relative;
+  }
+
+  .about-site::after {
+    content: "";
+
+    position: absolute;
+    top: -70px;
+    right: 0;
+
+    background: #64a83b url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-size: 720px 696px;
+
+    width: 720px;
+    height: 696px;
+
+    z-index: -1;
+  }
+
+  .about-site__text {
+    position: relative;
+
+    background: none;
+
+    height: 606px;
+  }
+
+  .about-site__text::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 555px;
+
+    background: url("../img/index-can-desktop@1x.png") no-repeat;
+
+    width: 552px;
+    height: 499px;
+  }
 }

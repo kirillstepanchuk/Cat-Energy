@@ -1,0 +1,23 @@
+.page-header__top-content {
+  padding-bottom: 15px;
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__top-content {
+    width: 175px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}

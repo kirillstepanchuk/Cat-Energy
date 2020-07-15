@@ -1,3 +1,7 @@
+.program-info__unit {
+  margin-top: 30px;
+}
+
 .program-info__label {
   color: #222222;
   font-size: 16px;
@@ -9,4 +13,16 @@
 
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .program-info {
+    border: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: 1300px) {
+  .program-info {
+    width: 570px;
+  }
 }

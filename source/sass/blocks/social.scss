@@ -1,0 +1,37 @@
+.social {
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .social {
+    border: none;
+  }
+
+  .social__vkontakte svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__instagram svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__facebook svg {
+    width: 14px;
+    height: 28px;
+  }
+}

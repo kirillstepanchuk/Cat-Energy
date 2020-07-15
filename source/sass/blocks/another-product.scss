@@ -1,10 +1,64 @@
 .another-product__title {
   font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+
+  padding-top: 80px;
 }
 
 .another-product__text {
   font-family: "Arial", "Helvetica", sans-serif;
   color: #444444;
   font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .another-product {
+    border: 1px solid #e6e6e6;
+
+    margin-top: 140px;
+
+    width: 324px;
+    height: 432px;
+
+    box-sizing: border-box;
+  }
+
+  .another-product__title {
+    font-size: 20px;
+
+    margin: 0 auto;
+    padding-top: 165px;
+
+    width: 150px;
+  }
+
+  .another-product__text {
+    font-size: 16px;
+
+    margin: 0 auto;
+    padding-top: 30px;
+
+    width: 170px;
+  }
+
+  .another-product__button-show {
+    margin: 0 auto;
+    margin-top: 85px;
+
+    width: 249px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .another-product {
+    width: 245px;
+  }
+
+  .another-product__button-show {
+    width: 169px;
+  }
 }
