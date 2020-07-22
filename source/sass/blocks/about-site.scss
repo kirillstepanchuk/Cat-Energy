@@ -30,7 +30,7 @@
     background: none;
   }
 
-  .about-site__text {
+  .about-site__content {
     background: url("../img/index-can-tablet@1x.jpg") no-repeat;
     background-position: 35px 265px;
 
@@ -101,7 +101,7 @@
     z-index: -1;
   }
 
-  .about-site__text {
+  .about-site__content {
     position: relative;
 
     background: none;
@@ -109,7 +109,7 @@
     height: 606px;
   }
 
-  .about-site__text::after {
+  .about-site__content::after {
     content: "";
 
     position: absolute;
