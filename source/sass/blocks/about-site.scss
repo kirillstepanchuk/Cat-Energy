@@ -31,10 +31,7 @@
   }
 
   .about-site__content {
-    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
-    background-position: 35px 265px;
-
-    height: 850px;
+    position: relative;
   }
 
   .about-site__title {
@@ -60,7 +57,12 @@
   }
 
   .about-site__image {
-    display: none;
+    position: absolute;
+
+    width: 709px;
+    height: 609px;
+
+    z-index: -1;
   }
 
   .about-site__button {
@@ -68,6 +70,7 @@
     padding-bottom: 16px;
     margin-left: 90px;
     margin-top: 50px;
+    margin-bottom: 500px;
 
     width: 245px;
   }
@@ -103,23 +106,16 @@
   }
 
   .about-site__content {
-    position: relative;
-
-    background: none;
-
     height: 606px;
   }
 
-  .about-site__content::after {
-    content: "";
-
-    position: absolute;
+  .about-site__image {
     top: 0;
-    left: 555px;
+    right: 300px;
 
-    background: url("../img/index-can-desktop@1x.png") no-repeat;
-
-    width: 552px;
+    width: 522px;
     height: 499px;
+
+    z-index: 1;
   }
 }
