@@ -90,10 +90,13 @@
     top: -70px;
     right: 0;
 
-    background: #64a83b url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background: #64a83b;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
     background-size: 720px 696px;
+    background-position: right 0;
 
-    width: 720px;
+    width: 50%;
     height: 696px;
 
     z-index: -1;
