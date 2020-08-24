@@ -40,37 +40,37 @@
         <form class="form__selection selection" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="selection__block pet-info">
             <legend class="visually-hidden">Данные о питомце</legend>
-            <label for="pet-name" class="pet-info__label">
+            <label class="pet-info__label" for="pet-name">
               Имя:*
-              <input type="text" class="pet-info__value pet-info__value-name" id="pet-name" name="pet-name" placeholder="Барсик" required>
+              <input class="pet-info__value pet-info__value-name" type="text" id="pet-name" name="pet-name" placeholder="Барсик" required>
             </label>
-            <label for="pet-weight" class="pet-info__label">
+            <label class="pet-info__label" for="pet-weight">
               Вес(кг):*
-              <input type="text" class="pet-info__value pet-info__value-weight" id="pet-weight" name="pet-weight" placeholder="7" required>
+              <input class="pet-info__value pet-info__value-weight" type="text" id="pet-weight" name="pet-weight" placeholder="7" required>
             </label>
-            <label for="pet-age" class="pet-info__label">
+            <label class="pet-info__label" for="pet-age">
               Возраст(лет):
-              <input type="text" class="pet-info__value pet-info__value-age" id="pet-age" name="pet-age" placeholder="7">
+              <input class="pet-info__value pet-info__value-age" type="text" id="pet-age" name="pet-age" placeholder="7">
             </label>
           </fieldset>
           <fieldset class="selection__block program-info">
             <legend class="visually-hidden">Цель покупки</legend>
             <ul class="program-info__list">
               <li class="program-info__unit">
-                <label for="target-low-weight" class="program-info__label">
-                  <input type="radio" class="program-info__input" id="target-low-weight" name="program-target" value="slimming" checked>
+                <label class="program-info__label" for="target-low-weight">
+                  <input class="program-info__input" type="radio" id="target-low-weight" name="program-target" value="slimming" checked>
                   Похудение
                 </label>
               </li>
               <li class="program-info__unit">
-                <label for="target-mass-gain" class="program-info__label">
-                  <input type="radio" class="program-info__input" id="target-mass-gain" name="program-target" value="mass-gain">
+                <label class="program-info__label" for="target-mass-gain">
+                  <input class="program-info__input" type="radio" id="target-mass-gain" name="program-target" value="mass-gain">
                   Набор массы
                 </label>
               </li>
               <li class="program-info__unit">
-                <label for="target-not-determined" class="program-info__label">
-                  <input type="radio" class="program-info__input" id="target-not-determined" name="program-target" value="need-help">
+                <label class="program-info__label" for="target-not-determined">
+                  <input class="program-info__input" type="radio" id="target-not-determined" name="program-target" value="need-help">
                   Не знаю(нужен ваш совет)
                 </label>
               </li>
@@ -80,15 +80,15 @@
             <legend class="personal-info__legend">Контактные данные (владельца кота)</legend>
             <ul class="personal-info__list">
               <li class="personal-info__unit">
-                <label for="email" class="personal-info__label">
+                <label class="personal-info__label" for="email">
                   e-mail:*
-                  <input type="email" class="personal-info__value personal-info__value-email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="personal-info__value personal-info__value-email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
                 </label>
               </li>
               <li class="personal-info__unit">
-                <label for="phone-number" class="personal-info__label">
+                <label class="personal-info__label" for="phone-number">
                   Телефон:*
-                  <input type="tel" class="personal-info__value personal-info__value-phone" name="phone" id="phone-number" placeholder="8 (960) 900-60-90" required>
+                  <input class="personal-info__value personal-info__value-phone" type="tel" name="phone" id="phone-number" placeholder="8 (960) 900-60-90" required>
                 </label>
               </li>
             </ul>
@@ -101,33 +101,33 @@
             <legend class="extra-info__legend">Дополнительно</legend>
             <ul class="extra-info__list">
               <li class="extra-info__unit">
-                <label for="sweetener" class="extra-info__label">
-                  <input type="checkbox" class="extra-info__input" id="sweetener" name="product-sweetener" checked>
+                <label class="extra-info__label" for="sweetener">
+                  <input class="extra-info__input" type="checkbox" id="sweetener" name="product-sweetener" checked>
                   Сахарозаменитель
                 </label>
               </li>
               <li class="extra-info__unit">
-                <label for="water" class="extra-info__label">
-                  <input type="checkbox" class="extra-info__input" id="water" name="product-water">
+                <label class="extra-info__label" for="water">
+                  <input class="extra-info__input" type="checkbox" id="water" name="product-water">
                   Питьевая вода
                 </label>
               </li>
               <li class="extra-info__unit">
-                <label for="milk" class="extra-info__label">
-                  <input type="checkbox" class="extra-info__input" id="milk" name="product-milk">
+                <label class="extra-info__label" for="milk">
+                  <input class="extra-info__input" type="checkbox" id="milk" name="product-milk">
                   Молоко
                 </label>
               </li>
               <li class="extra-info__unit">
-                <label for="vitamins" class="extra-info__label">
-                  <input type="checkbox" class="extra-info__input" id="vitamins" name="product-vitamins">
+                <label class="extra-info__label" for="vitamins">
+                  <input class="extra-info__input" type="checkbox" id="vitamins" name="product-vitamins">
                   Витамины
                 </label>
               </li>
             </ul>
           </fieldset>
           <div class="selection__footer-content">
-            <button type="submit" class="selection__submit-button button">
+            <button class="selection__submit-button button" type="submit">
               <span>Отправить заявку</span>
             </button>
             <span class="selection__required">* — Обязательные поля</span>
