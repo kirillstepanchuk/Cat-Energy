@@ -46,16 +46,22 @@
 
 @media (min-width: 768px) {
   .about-product__list {
+    margin-left: -60px;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .about-product__unit {
-    width: 300px;
+    margin-left: 60px;
+
+    width: 324px;
 
     flex-direction: column;
     align-items: flex-start;
+
+    box-sizing: border-box;
   }
 
   .about-product__description {
@@ -66,5 +72,17 @@
   .about-product__image {
     width: 80px;
     height: 80px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about-product__list {
+    margin-left: -80px;
+  }
+
+  .about-product__unit {
+    margin-left: 80px;
+
+    width: 245px;
   }
 }
