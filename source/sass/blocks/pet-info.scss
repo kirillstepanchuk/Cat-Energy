@@ -1,10 +1,75 @@
+.pet-info {
+  display: flex;
+}
+
 .pet-info__label {
   color: #222222;
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+
+  margin-top: 14px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pet-info__value {
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+
+  border: 1px solid #e7e7e7;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  margin-left: 15px;
+
+  box-sizing: border-box;
+}
+
+.pet-info__value-name {
+  width: 229px;
+}
+
+.pet-info__value-weight {
+  width: 204px;
+}
+
+.pet-info__value-age {
+  width: 172px;
+}
+
+@media (min-width: 768px) {
+  .pet-info__value-name {
+    width: 567px;
+  }
+
+  .pet-info__value-weight {
+    width: 536px;
+  }
+
+  .pet-info__value-age {
+    width: 497px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .pet-info {
+    width: 570px;
+  }
+
+  .pet-info__value-name {
+    width: 506px;
+  }
+
+  .pet-info__value-weight {
+    width: 475px;
+  }
+
+  .pet-info__value-age {
+    width: 436px;
+  }
 }

@@ -1,8 +1,52 @@
+.selection {
+  margin-top: 26px;
+}
+
 .selection__block {
   border: none;
+
+  padding: 0;
+  margin: 0;
 }
 
 .selection__required {
   font-family: "Arial", "Helvetica", sans-serif;
   color: #444444;
+  text-align: center;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  display: block;
+}
+
+.selection__submit-button {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .selection {
+    padding-bottom: 72px;
+  }
+
+  .selection__footer-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .selection__required {
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .selection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .selection__submit-button {
+    width: 570px;
+  }
 }

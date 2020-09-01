@@ -13,8 +13,13 @@
 
 .program-options__description {
   font-family: "Arial", "Helvetica", sans-serif;
+  line-height: 24px;
   color: #444444;
   font-weight: 400;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  padding-bottom: 20px;
 }
 
 .program-options__button {
@@ -24,4 +29,39 @@
 
 .program-options__button:active {
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .program-options__unit {
+    padding-top: 80px;
+    padding-right: 60px;
+    padding-bottom: 62px;
+    padding-left: 52px;
+  }
+
+  .program-options__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program-options__description {
+    border: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  .program-options {
+    margin-top: 80px;
+  }
+
+  .program-options__unit {
+    width: 570px;
+
+    box-sizing: border-box;
+  }
+
+  .program-options__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -1,17 +1,20 @@
 .main-menu {
   list-style: none;
+  text-align: center;
 
   padding: 0;
   margin: 0;
 }
 
 .main-menu__unit {
-  font-family: "OswaldMedium", "Arial", sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .main-menu__unit a {
+  font-family: "OswaldMedium", "Arial", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
   color: #111111;
 }
 
@@ -21,4 +24,54 @@
 
 .main-menu__unit a:active {
   opacity: 0.3;
+}
+
+.main-menu__unit--active a {
+  position: relative;
+}
+
+.main-menu__unit--active a::after {
+  content: "";
+
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  background-color: #68b738;
+
+  width: 100%;
+  height: 2px;
+}
+
+@media (min-width: 768px) {
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  .main-menu__unit {
+    border: none;
+
+    padding-left: 35px;
+  }
+
+  .main-menu__unit a {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main-menu--index a {
+    color: #ffffff;
+  }
+
+  .main-menu--index a::after {
+    background-color: #ffffff;
+  }
+
+  .main-menu__unit a {
+    font-size: 20px;
+  }
 }

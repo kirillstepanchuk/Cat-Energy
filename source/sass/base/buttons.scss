@@ -1,4 +1,6 @@
 .button {
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 
   background-color: #68b738;
@@ -34,10 +36,10 @@
 }
 
 .button span {
-  font-size: 20px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .button--grey span {
