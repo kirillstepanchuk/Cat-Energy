@@ -1,30 +1,120 @@
 .program-options__unit {
+  position: relative;
+
   background-color: #f2f2f2;
 
-  padding: 20px;
+  padding: 31px 20px 21px 20px;
   margin-top: 20px;
+}
+
+.program-options__unit::after {
+  content: "";
+
+  position: absolute;
+  top: 26px;
+  left: 22px;
+
+  background-color: #68b738;
+  border-radius: 50%;
+
+  width: 50px;
+  height: 50px;
+}
+
+.program-options__weight-loss::before {
+  content: "";
+
+  position: absolute;
+  top: 24px;
+  left: 30px;
+
+  background-image: url("../../img/icon-cat-slim.svg");
+
+  width: 35px;
+  height: 49px;
+
+  z-index: 1;
+}
+
+.program-options__weight-gain::before {
+  content: "";
+
+  position: absolute;
+  top: 35px;
+  left: 13px;
+
+  background-image: url("../../img/icon-cat-pro.svg");
+
+  width: 67px;
+  height: 28px;
+
+  z-index: 1;
 }
 
 .program-options__title {
   font-size: 24px;
+  line-height: 37px;
   text-transform: uppercase;
   font-weight: 400;
+
+  padding-left: 71px;
 }
 
 .program-options__description {
   font-family: "Arial", "Helvetica", sans-serif;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   color: #444444;
   font-weight: 400;
 
   border-bottom: 1px solid #d9d9d9;
 
-  padding-bottom: 20px;
+  margin: 0;
+  padding-bottom: 23px;
+  padding-top: 30px;
+  margin-bottom: 19px;
 }
 
 .program-options__button {
+  position: relative;
+
+  font-size: 16px;
+  line-height: 16px;
+
   text-transform: uppercase;
   color: #111111;
+}
+
+.program-options__button::before {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 98px;
+
+  background-color: #3e4242;
+
+  width: 17px;
+  height: 2px;
+}
+
+.program-options__button:hover::before {
+  width: 26px;
+}
+
+.program-options__button::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 115px;
+
+  border: 5px solid transparent;
+  border-left: 5px solid #3e4242;
+}
+
+.program-options__button:hover::after {
+  left: 121px;
 }
 
 .program-options__button:active {
@@ -33,25 +123,88 @@
 
 @media (min-width: 768px) {
   .program-options__unit {
-    padding-top: 80px;
-    padding-right: 60px;
+    padding-top: 77px;
+    padding-right: 55px;
     padding-bottom: 62px;
     padding-left: 52px;
+    margin-top: 30px;
+  }
+
+  .program-options__unit::after {
+    top: 92px;
+    left: 446px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  .program-options__weight-loss::before {
+    top: 80px;
+    left: 476px;
+
+    width: 140px;
+    height: 194px;
+  }
+
+  .program-options__weight-gain::before {
+    top: 135px;
+    left: 412px;
+
+    width: 268px;
+    height: 112px;
   }
 
   .program-options__title {
     font-size: 36px;
     line-height: 36px;
+
+    padding: 0;
   }
 
   .program-options__description {
+    font-size: 16px;
+    line-height: 24px;
+
     border: none;
+
+    padding-bottom: 37px;
+    padding-top: 25px;
+
+    width: 372px;
+  }
+
+  .program-options__weight-gain .program-options__description {
+    width: 340px;
+  }
+
+  .program-options__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program-options__button::before {
+    top: 15px;
+    left: 125px;
+  }
+
+  .program-options__button::after {
+    top: 11px;
+    left: 142px;
+  }
+
+  .program-options__button:hover::after {
+    left: 151px;
   }
 }
 
 @media (min-width: 1300px) {
   .program-options {
-    margin-top: 80px;
+    margin-top: 20px;
+  }
+
+  .program-options__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .program-options__unit {
@@ -60,8 +213,46 @@
     box-sizing: border-box;
   }
 
-  .program-options__wrapper {
-    display: flex;
-    justify-content: space-between;
+  .program-options__unit::after {
+    top: 47px;
+    left: 52px;
+
+    width: 100px;
+    height: 100px;
+  }
+
+  .program-options__weight-loss::before {
+    top: 41px;
+    left: 66px;
+
+    width: 70px;
+    height: 97px;
+  }
+
+  .program-options__weight-gain::before {
+    top: 69px;
+    left: 34px;
+
+    width: 134px;
+    height: 56px;
+  }
+
+  .program-options__title {
+    padding-left: 162px;
+  }
+
+  .program-options__description {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 49px;
+    margin-bottom: 0;
+    padding-bottom: 31px;
+
+    width: auto;
+  }
+
+  .program-options__weight-gain .program-options__description {
+    width: auto;
   }
 }

@@ -1,14 +1,40 @@
 .catalog__title {
   font-size: 36px;
   font-weight: 400;
+
+  padding-top: 24px;
+  padding-bottom: 38px;
+}
+
+.catalog__wrapper {
+  border-top: 1px solid #ededed;
+
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: 768px) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+
+    padding-top: 52px;
+    padding-bottom: 25px;
+  }
+
   .catalog__wrapper {
+    border: none;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
 
-    margin-top: 29px;
+@media (min-width: 1300px) {
+  .catalog__title {
+    padding-top: 69px;
   }
 }

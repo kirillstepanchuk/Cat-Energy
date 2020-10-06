@@ -1,5 +1,5 @@
 .adress {
-  padding-top: 30px;
+  padding-top: 29px;
 
   &--grey {
     background-color: #f2f2f2;
@@ -11,6 +11,7 @@
 
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .adress__title {
@@ -28,6 +29,7 @@
   line-height: 20px;
 
   margin: 0;
+  margin-left: 3px;
 
   width: 140px;
 }
@@ -38,6 +40,10 @@
 }
 
 @media (min-width: 768px) {
+  .adress {
+    padding-top: 63px;
+  }
+
   .adress__wrapper {
     justify-content: space-between;
   }
@@ -46,13 +52,29 @@
     font-size: 20px;
     line-height: 25px;
 
+    padding-left: 41px;
+
     width: 180px;
   }
 
   .adress__place {
+    font-size: 16px;
+    line-height: 20px;
     text-align: end;
 
+    padding-right: 41px;
+
     width: 160px;
+  }
+
+  .adress__place span {
+    padding-top: 20px;
+
+    display: block;
+  }
+
+  .adress__map-image {
+    height: 430px;
   }
 }
 
@@ -70,7 +92,7 @@
 
     background-color: #ffffff;
 
-    width: 570px;
+    width: 488px;
     height: 201px;
 
     align-items: center;
@@ -80,9 +102,18 @@
 
   .adress__title {
     margin-left: 35px;
+    padding-left: 0;
   }
 
   .adress__place {
-    margin-right: 50px;
+    text-align: left;
+
+    margin-right: 43px;
+    margin-top: 5px;
+    padding-right: 0;
+  }
+
+  .adress__map-image {
+    height: 400px;
   }
 }

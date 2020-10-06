@@ -1,72 +1,92 @@
 .main-nav {
-    position: relative;
+  position: relative;
+
+  border-bottom: 1px solid #e6e6e6;
+
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .main-nav__toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 
-    background: none;
+  background: none;
 
-    display: block;
+  display: block;
 
-    cursor: pointer;
-    border: none;
-    outline: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .main-nav--closed .main-nav__toggle::before {
-    content: "";
+  content: "";
 
-    position: absolute;
-    top: -45px;
-    right: 0;
+  position: absolute;
+  top: -42px;
+  right: 0;
 
-    background-color: #222222;
-    box-shadow: 0 6px 0 0 #222222, 0 12px 0 0 #222222;
+  background-color: #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
 
-    width: 24px;
-    height: 2px;
+  width: 24px;
+  height: 1px;
 }
 
 .main-nav--opened .main-nav__toggle {
-    top: -35px;
-    right: 0;
+  top: -35px;
+  right: 20px;
 
-    &::before,
-    &::after {
-        content: "";
+  &::before,
+  &::after {
+    content: "";
 
-        position: absolute;
-        top: 0;
-        right: 0;
+    position: absolute;
+    top: 0;
+    right: -20px;
 
-        background-color: #222222;
+    background-color: #222222;
 
-        width: 24px;
-        height: 2px;
-    }
+    width: 24px;
+    height: 1px;
+  }
 
-    &::before {
-        transform: rotate(45deg);
-    }
+  &::before {
+    transform: rotate(45deg);
+  }
 
-    &::after {
-        transform: rotate(-45deg);
-    }
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
-@media (max-width: 768px) {
-    .main-nav--closed .main-menu__unit {
-        display: none;
-    }
+@media (max-width: 767px) {
+  .main-nav {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    .main-nav--nojs .main-nav__toggle {
-        display: none;
-    }
+  .main-nav--closed .main-menu__unit {
+    display: none;
+  }
 
-    .main-nav--nojs .main-menu__unit {
-        display: block;
-    }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-menu__unit {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    border-bottom: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

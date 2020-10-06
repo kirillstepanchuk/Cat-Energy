@@ -7,6 +7,7 @@
   background-position: center;
 
   margin: 0 auto;
+  margin-top: 36px;
 
   height: 240px;
   width: 320px;
@@ -19,6 +20,7 @@
   background-position: center;
 
   margin: 0 auto;
+  margin-top: 36px;
 
   height: 240px;
   width: 320px;
@@ -30,20 +32,66 @@
   display: block;
 }
 
-.slider__button {
+.slider__button span {
   font-size: 16px;
   text-transform: uppercase;
+  line-height: 20px;
+}
+
+.slider__buttons {
+  margin: 0 auto;
+  padding-bottom: 35px;
+  margin-top: 33px;
+
+  width: 200px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.slider__button {
+  position: relative;
+
+  padding: 0;
 
   border: none;
 
   cursor: pointer;
 }
 
-.slider__buttons {
-  padding-bottom: 40px;
+.slider__button--active::before {
+  content: "";
 
-  display: flex;
-  justify-content: center;
+  position: absolute;
+
+  background-color: #68b738;
+  border-radius: 10px;
+
+  width: 35px;
+  height: 6px;
+}
+
+.slider__button-before::before {
+  top: 7px;
+  left: 65px;
+}
+
+.slider__button-after::before {
+  top: 7px;
+  right: 67px;
+}
+
+.slider__switch {
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+
+  margin-left: 19px;
+  margin-right: 19px;
+  margin-top: 3px;
+
+  width: 84px;
+  height: 14px;
 }
 
 @media (min-width: 768px) {
@@ -61,7 +109,7 @@
 
   .slider__image-before {
     position: absolute;
-    top: -160px;
+    top: -210px;
 
     background: url("../img/before-tablet@1x.png") no-repeat;
 
@@ -80,10 +128,72 @@
   }
 
   .slider__buttons {
-    padding-top: 360px;
+    position: relative;
+
+    padding-top: 358px;
     padding-bottom: 68px;
 
+    width: 572px;
+
+    justify-content: space-between;
     align-items: flex-end;
+  }
+
+  .slider__buttons::after {
+    content: "";
+
+    position: absolute;
+    bottom: 80px;
+    left: 70px;
+
+    background-color: #dcdcdc;
+    border-radius: 3px;
+
+    width: 428px;
+    height: 6px;
+  }
+
+  .slider__button {
+    font-size: 20px;
+    line-height: 20px;
+
+    border-bottom: 1px dotted #b8b8b8;
+
+    padding: 0;
+    padding-bottom: 6px;
+  }
+
+  .slider__button--active::before {
+    display: none;
+  }
+
+  .slider__button span {
+    font-size: 20px;
+  }
+
+  .slider__switch {
+    position: relative;
+
+    border-radius: 50%;
+
+    width: 32px;
+    height: 32px;
+
+    z-index: 2;
+  }
+
+  .slider__switch::after {
+    content: "";
+
+    position: absolute;
+    top: 11px;
+    left: 11px;
+
+    background-color: #68b738;
+    border-radius: 50%;
+
+    width: 8px;
+    height: 8px;
   }
 }
 
@@ -106,8 +216,8 @@
 
   .slider__image {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 41px;
+    top: -53px;
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -118,5 +228,7 @@
 
   .slider__buttons {
     padding-top: 0;
+    margin-right: 0;
+    margin-top: 12px;
   }
 }

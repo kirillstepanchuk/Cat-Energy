@@ -1,6 +1,11 @@
 .product {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 23px;
 }
 
 .product__wrapper {
@@ -10,23 +15,29 @@
 .product__title {
   color: #111111;
   font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   font-weight: 400;
 
   width: 75px;
 
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .product__options {
   font-family: "Arial", "Helvetica", sans-serif;
   color: #444444;
-  font-size: 12px;
-  line-height: 16px;
 
   width: 140px;
 
-  padding-top: 20px;
+  padding-top: 11px;
+}
+
+.product__option {
+  font-size: 12px;
+  line-height: 16px;
+
+  padding: 0;
 }
 
 .product__option-title {
@@ -41,10 +52,11 @@
   .product {
     background-color: #f2f2f2;
 
-    padding-left: 38px;
-    padding-right: 37px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 40px;
     padding-top: 0;
+    margin: 0;
     margin-top: 140px;
 
     width: 324px;
@@ -58,30 +70,39 @@
   }
 
   .product__title {
+    font-size: 20px;
+    line-height: 20px;
     text-align: center;
 
     margin: 0 auto;
+    padding-top: 17px;
 
-    width: 126px;
+    width: 130px;
   }
 
   .product__options {
-    font-size: 16px;
-
-    margin-top: 20px;
+    margin-top: 19px;
+    padding: 0;
 
     width: 249px;
   }
 
+  .product__options td {
+    border-bottom: 1px solid;
+  }
+
   .product__option {
-    padding-top: 9px;
-    padding-bottom: 6px;
+    font-size: 16px;
+    line-height: 16px;
+
+    padding-top: 6px;
+    padding-bottom: 8px;
   }
 
   .product__button {
     margin: 0 auto;
 
-    margin-top: 33px;
+    margin-top: 32px;
 
     width: 249px;
   }
@@ -89,6 +110,8 @@
 
 @media (min-width: 1300px) {
   .product {
+    margin-top: 141px;
+
     width: 245px;
   }
 

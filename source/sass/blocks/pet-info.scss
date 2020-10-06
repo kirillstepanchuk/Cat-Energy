@@ -1,5 +1,21 @@
 .pet-info {
+  padding-bottom: 10px;
+
   display: flex;
+}
+
+.pet-info__list {
+  list-style: none;
+
+  padding: 0;
+}
+
+.pet-info__unit {
+  margin-top: 14px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pet-info__label {
@@ -7,12 +23,6 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-
-  margin-top: 14px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .pet-info__value {
@@ -23,11 +33,19 @@
   border: 1px solid #e7e7e7;
 
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 13px;
   padding-left: 15px;
-  margin-left: 15px;
 
   box-sizing: border-box;
+}
+
+.pet-info__value:hover {
+  border-color: #cdcdcd;
+}
+
+.pet-info__value:focus:hover,
+.pet-info__value:focus {
+  border-color: red;
 }
 
 .pet-info__value-name {
@@ -43,6 +61,28 @@
 }
 
 @media (min-width: 768px) {
+  .pet-info__list {
+    margin-top: 40px;
+  }
+
+  .pet-info__unit {
+    margin-top: 20px;
+  }
+
+  .pet-info__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .pet-info__value {
+    font-size: 20px;
+    line-height: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+  }
+
   .pet-info__value-name {
     width: 567px;
   }
@@ -58,7 +98,13 @@
 
 @media (min-width: 1300px) {
   .pet-info {
+    padding-bottom: 0;
+
     width: 570px;
+  }
+
+  .pet-info__list {
+    margin: 0;
   }
 
   .pet-info__value-name {

@@ -5,11 +5,12 @@
 
 .about-site__title {
   font-size: 36px;
+  line-height: 36px;
   color: #ffffff;
   font-weight: 400;
   text-align: center;
 
-  padding-top: 25px;
+  padding-top: 28px;
 }
 
 .about-site__slogan {
@@ -17,15 +18,26 @@
   color: #ffffff;
   text-align: center;
 
-  padding-top: 15px;
+  padding-top: 23px;
   margin: 0;
 }
 
 .about-site__image {
-  // margin-top: 25px;
-  display: block;
-  margin: 25px auto;
+  margin: 0 auto;
+  margin-top: 28px;
 
+  display: block;
+}
+
+.about-site__button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 4px;
+}
+
+.about-site__button span {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media (min-width: 768px) {
@@ -43,8 +55,8 @@
     color: #111111;
     text-align: start;
 
-    padding-top: 60px;
-    padding-left: 90px;
+    padding-top: 50px;
+    padding-left: 87px;
 
     width: 427px;
   }
@@ -55,8 +67,8 @@
     color: #111111;
     text-align: start;
 
-    padding-top: 45px;
-    padding-left: 90px;
+    padding-top: 43px;
+    padding-left: 87px;
   }
 
   .about-site__image {
@@ -71,9 +83,9 @@
   .about-site__button {
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-left: 90px;
-    margin-top: 50px;
-    margin-bottom: 500px;
+    margin-left: 88px;
+    margin-top: 47px;
+    margin-bottom: 528px;
 
     width: 245px;
   }
@@ -93,7 +105,7 @@
     content: "";
 
     position: absolute;
-    top: -70px;
+    top: -120px;
     right: 0;
 
     background-color: #64a83b;
@@ -108,13 +120,28 @@
     z-index: -1;
   }
 
+  .about-site__title {
+    padding-top: 103px;
+    padding-left: 82px;
+  }
+
+  .about-site__slogan {
+    padding-top: 40px;
+    padding-left: 82px;
+  }
+
+  .about-site__button {
+    margin-left: 81px;
+    margin-top: 53px;
+  }
+
   .about-site__content {
     height: 606px;
   }
 
   .about-site__image {
-    top: 0;
-    right: 300px;
+    top: -7px;
+    right: 250px;
 
     width: 522px;
     height: 499px;

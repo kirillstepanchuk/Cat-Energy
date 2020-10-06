@@ -1,27 +1,33 @@
 .personal-info__legend {
-  font-size: 24px;
-  line-height: 24px;
+  padding-top: 27px;
+  padding-bottom: 30px;
 
-  padding-top: 30px;
+  width: 206px;
 }
 
 .personal-info__list {
   list-style: none;
 
   margin: 0;
+  margin-top: 5px;
+  margin-bottom: -14px;
   padding: 0;
+}
+
+.personal-info__unit {
+  position: relative;
+
+  margin-bottom: 14px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .personal-info__label {
   color: #222222;
   font-size: 16px;
   text-transform: uppercase;
-
-  margin-top: 14px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .personal-info__value {
@@ -33,7 +39,6 @@
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 15px;
-  margin-left: 15px;
 
   box-sizing: border-box;
 }
@@ -46,7 +51,53 @@
   width: 204px;
 }
 
+.personal-info__icon {
+  position: absolute;
+}
+
+.personal-info__icon-mail {
+  top: 15px;
+  right: 15px;
+}
+
+.personal-info__icon-phone {
+  top: 12px;
+  right: 12px;
+}
+
 @media (min-width: 768px) {
+  .personal-info {
+    margin-right: 35px;
+  }
+
+  .personal-info__legend {
+    padding-top: 76px;
+
+    width: auto;
+  }
+
+  .personal-info__list {
+    margin-top: 46px;
+  }
+
+  .personal-info__unit {
+    margin-bottom: 20px;
+  }
+
+  .personal-info__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .personal-info__value {
+    font-size: 20px;
+    line-height: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
   .personal-info__value-email {
     width: 551px;
   }
@@ -54,11 +105,27 @@
   .personal-info__value-phone {
     width: 535px;
   }
+
+  .personal-info__icon-mail {
+    top: 20px;
+    right: 20px;
+  }
+
+  .personal-info__icon-phone {
+    top: 17px;
+    right: 17px;
+  }
 }
 
 @media (min-width: 1300px) {
   .personal-info {
+    margin: 0;
+
     width: 1220px;
+  }
+
+  .personal-info__legend {
+    padding-top: 70px;
   }
 
   .personal-info__list {
@@ -70,7 +137,8 @@
   .personal-info__unit {
     width: 570px;
 
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 
   .personal-info__value-email {
@@ -79,5 +147,13 @@
 
   .personal-info__value-phone {
     width: 472px;
+  }
+
+  .personal-info__icon-mail {
+    top: 21px;
+  }
+
+  .personal-info__icon-phone {
+    right: 19px;
   }
 }

@@ -2,8 +2,10 @@
   font-size: 36px;
   line-height: 60px;
 
-  padding-top: 22px;
+  padding-top: 17px;
   padding-bottom: 22px;
+
+  z-index: 1;
 }
 
 .about-product__list {
@@ -12,9 +14,12 @@
   padding: 0;
   margin: 0;
   padding-bottom: 22px;
+  padding-top: 5px;
 }
 
 .about-product__unit {
+  position: relative;
+
   margin-bottom: 20px;
 
   display: flex;
@@ -23,7 +28,8 @@
 
 .about-product__description {
   font-family: "Arial", "Helvetica", sans-serif;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   color: #444444;
 
   margin: 0;
@@ -31,6 +37,12 @@
   padding-left: 20px;
 
   width: 195px;
+
+  z-index: 1;
+}
+
+.about-product__description br {
+  display: none;
 }
 
 .about-product__image {
@@ -45,8 +57,17 @@
 }
 
 @media (min-width: 768px) {
+  .about-product__title {
+    font-size: 60px;
+    line-height: 60px;
+
+    padding-top: 43px;
+    padding-bottom: 0;
+  }
+
   .about-product__list {
     margin-left: -60px;
+    margin-bottom: 15px;
 
     display: flex;
     justify-content: space-between;
@@ -55,6 +76,8 @@
 
   .about-product__unit {
     margin-left: 60px;
+    margin-top: 68px;
+    margin-bottom: 66px;
 
     width: 324px;
 
@@ -64,9 +87,45 @@
     box-sizing: border-box;
   }
 
+  .about-product__unit::after {
+    font-family: "OswaldRegular", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+
+    position: absolute;
+    top: -40px;
+    left: 116px;
+  }
+
+  .about-product__unit--1::after {
+    content: "1";
+  }
+
+  .about-product__unit--2::after {
+    content: "2";
+  }
+
+  .about-product__unit--3::after {
+    content: "3";
+  }
+
+  .about-product__unit--4::after {
+    content: "4";
+  }
+
   .about-product__description {
+    font-size: 16px;
+    line-height: 24px;
+
     padding-left: 0;
-    padding-top: 35px;
+    padding-top: 31px;
+
+    width: 245px;
+  }
+
+  .about-product__description br {
+    display: inline;
   }
 
   .about-product__image {
@@ -84,5 +143,9 @@
     margin-left: 80px;
 
     width: 245px;
+  }
+
+  .about-product__title {
+    padding-top: 72px;
   }
 }
