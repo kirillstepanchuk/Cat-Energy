@@ -79,7 +79,15 @@
     background-color: #ffffff;
   }
 
+  .main-menu__unit {
+    padding-top: 31px;
+  }
+
   .main-menu__unit a {
     font-size: 20px;
+  }
+
+  .main-menu__unit--active a::after {
+    top: 36px;
   }
 }
