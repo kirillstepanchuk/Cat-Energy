@@ -10,7 +10,7 @@
 
     <header class="page-header wrapper">
       <div class="page-header__top-content">
-        <a class="page-header__logo logo">          
+        <a class="page-header__logo logo">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -41,7 +41,11 @@
         <div class="about-site__content wrapper">
             <h1 class="about-site__title">Функциональное питание для котов</h1>
             <p class="about-site__slogan">Занялся собой? Займись котом!</p>
-            <img class="about-site__image" src="img/index-can-mobile@1x.png" alt="Cat energy pro" width="280" height="270">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="about-site__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat energy pro">
+            </picture>
             <a class="button about-site__button" href="form.html">
               <span>Подобрать программу</span>
             </a>
@@ -70,28 +74,28 @@
           <li class="about-product__unit about-product__unit--1">
             <h3 class="visually-hidden">Содержание</h3>
             <div class="about-product__image">
-              <img src="img/advantage-leaf@1x.png" alt="Содержание" width="50" height="50">
+              <img src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="Содержание" width="50" height="50">
             </div>
             <p class="about-product__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="about-product__unit about-product__unit--2">
             <h3 class="visually-hidden">Приготовление</h3>
             <div class="about-product__image">
-              <img src="img/advantage-powder@1x.png" alt="Приготовление" width="50" height="50">
+              <img src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" alt="Приготовление" width="50" height="50">
             </div>
             <p class="about-product__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="about-product__unit about-product__unit--3">
             <h3 class="visually-hidden">Пример потребления</h3>
             <div class="about-product__image">
-              <img src="img/advantage-dining@1x.png" alt="Пример потребления" width="50" height="50">
+              <img src="img/advantage-dining@1x.png" srcset="img/advantage-dining@2x.png 2x" alt="Пример потребления" width="50" height="50">
             </div>
             <p class="about-product__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="about-product__unit about-product__unit--4">
             <h3 class="visually-hidden">Быстрый результат</h3>
             <div class="about-product__image">
-              <img src="img/advantage-clock@1x.png" alt="Быстрый результат" width="50" height="50">
+              <img src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png 2x" alt="Быстрый результат" width="50" height="50">
             </div>
             <p class="about-product__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
           </li>
@@ -121,8 +125,20 @@
           </div>
           <div class="example__slider slider">
             <div class="slider__image-wrapper">
-              <div class="slider__image slider__image-before slider__image--active"></div>
-              <div class="slider__image slider__image-after"></div>
+              <div class="slider__image slider__image-before slider__image--active">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот">
+                </picture>
+              </div>
+              <div class="slider__image slider__image-after">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img src="img/after-desktop@1x.png" srcset="img/after-desktop@2x.png 2x" alt="Худой кот">
+                </picture>
+              </div>
             </div>
             <div class="slider__buttons">
               <button class="slider__button slider__button-before slider__button--active" type="button">
@@ -143,7 +159,6 @@
           <p class="adress__place">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
         <div class="adress__map">
-          <!-- <img src="http://placehold.it/320x362" class="adress__map" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362"> -->
           <iframe class="adress__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6182010980838!2d30.322242735528942!3d59.938477322303875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1591034409186!5m2!1sru!2sby" width="320" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>

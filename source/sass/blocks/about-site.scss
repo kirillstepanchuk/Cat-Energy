@@ -1,6 +1,26 @@
 .about-site {
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  background-size: 100% 305px;
+  position: relative;
+}
+
+.about-site::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: #63a73a;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  height: 305px;
+  width: 100%;
+
+  z-index: -1;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .about-site__title {
@@ -45,6 +65,10 @@
     background: none;
   }
 
+  .about-site::after {
+    background: none;
+  }
+
   .about-site__content {
     position: relative;
   }
@@ -55,7 +79,7 @@
     color: #111111;
     text-align: start;
 
-    padding-top: 50px;
+    padding-top: 45px;
     padding-left: 87px;
 
     width: 427px;
@@ -67,12 +91,16 @@
     color: #111111;
     text-align: start;
 
-    padding-top: 43px;
+    padding-top: 41px;
     padding-left: 87px;
   }
 
   .about-site__image {
     position: absolute;
+    top: 245px;
+    left: 29px;
+
+    margin: 0;
 
     width: 709px;
     height: 609px;
@@ -83,7 +111,7 @@
   .about-site__button {
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-left: 88px;
+    margin-left: 87px;
     margin-top: 47px;
     margin-bottom: 528px;
 
@@ -104,7 +132,6 @@
   .about-site::after {
     content: "";
 
-    position: absolute;
     top: -120px;
     right: 0;
 
@@ -117,7 +144,9 @@
     width: 50%;
     height: 696px;
 
-    z-index: -1;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .about-site__title {
@@ -140,8 +169,8 @@
   }
 
   .about-site__image {
-    top: -7px;
-    right: 250px;
+    top: 23px;
+    left: 498px;
 
     width: 522px;
     height: 499px;

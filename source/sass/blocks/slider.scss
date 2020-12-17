@@ -3,33 +3,22 @@
 }
 
 .slider__image-before {
-  background: url("../img/before-mobile@1x.png") no-repeat;
-  background-position: center;
-
   margin: 0 auto;
   margin-top: 36px;
-
-  height: 240px;
-  width: 320px;
 
   display: none;
 }
 
 .slider__image-after {
-  background: url("../img/after-mobile@1x.png") no-repeat;
-  background-position: center;
-
   margin: 0 auto;
   margin-top: 36px;
-
-  height: 240px;
-  width: 320px;
 
   display: none;
 }
 
 .slider__image--active {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .slider__button span {
